@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/style.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="~/Scripts/app/app.js"></script>
+<div ng-app="myApp" ng-controller="myCtrl">
+    <h1>
+        <strong>My Reviews</strong>
+    </h1>
+    <div class="container" ng-repeat="x in Data">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="" class="tile {{x.color}}">
+                    <h3 class="title">{{x.name}}</h3>
+                    <p>Review Date:{{x.reviewDate}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>
+                    <strong>My Reviews</strong>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="http://www.ubh.com" class="tile purple">
+                    <h3 class="title">Kentucky</h3>
+                    <p>Review Date:1-03-2018</p>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="http://www.ubh.com" class="tile orange">
+                    <h3 class="title">Oregon</h3>
+                    <p>Review Date:12-07-2018</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="http://www.ubh.com" class="tile green">
+                    <h3 class="title">Green Tile</h3>
+                    <p>Review Date:13-08-2018</p>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="http://www.ubh.com" class="tile blue">
+                    <h3 class="title">Blue Tile</h3>
+                    <p>Review Date:8-05-2018</p>
+                </a>
+            </div>
+        </div>
+    </div>*@
